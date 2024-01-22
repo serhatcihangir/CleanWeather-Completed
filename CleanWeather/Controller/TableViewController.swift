@@ -72,7 +72,11 @@ class TableViewController: UIViewController {
 extension TableViewController {
     
     @objc func appWillEnterForeground() {
-        self.locationManager.startUpdatingLocation()
+        let delayInMilliseconds = 250
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(delayInMilliseconds)) {
+            self.didPerformGeocode = false
+            self.locationManager.startUpdatingLocation()
+        }
     }
 }
 
@@ -157,7 +161,7 @@ extension TableViewController:  UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 115
     }
     
     
@@ -234,7 +238,13 @@ extension TableViewController: TableViewApiManagerDelegate {
             self.apiManager.getWeatherData(type: ThreeHourData.self, url: ApiManager.url3hourForecastWeather, cityName: weather.cityName)
         }else{
             if weather.isCurrentLocation {
-                locationList.insert(weather, at: 0)
+                let cLoc =  locationList.filter{$0.isCurrentLocation}
+                if cLoc.isEmpty {
+                    locationList.insert(weather, at: 0)
+                }else{
+                    locationList.remove(at: 0)
+                    locationList.insert(weather, at: 0)
+                }
             }else {
                 locationList.append(weather)
             }
@@ -313,7 +323,7 @@ extension TableViewController: CLLocationManagerDelegate {
         guard !didPerformGeocode else { return }
         didPerformGeocode = true
         if let location = locations.last{
-            print(location.coordinate.latitude, location.coordinate.longitude)
+//            print(location.coordinate.latitude, location.coordinate.longitude)
             apiManager.getWeatherData(type: WeatherData.self, url: ApiManager.urlCurrentWeather, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         }
     }
@@ -338,7 +348,7 @@ extension TableViewController {
             gradientLayer.colors = [topColor, middleColor, bottomColor]
         } else {
             let topColor = UIColor(hexString: "#5A9ACA").cgColor
-            let middleColor = UIColor(hexString: "#4daad6").cgColor
+            let middleColor = UIColor(hexString: "#1c92d2").cgColor
             let bottomColor = UIColor(hexString: "#6DD5FA").cgColor
             gradientLayer.colors = [topColor, middleColor, bottomColor]
         }

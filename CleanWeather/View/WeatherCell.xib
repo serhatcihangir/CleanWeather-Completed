@@ -36,20 +36,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28.2°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejw-HD-vjy">
-                        <rect key="frame" x="249" y="7" width="120" height="62"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-28.2°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejw-HD-vjy">
+                        <rect key="frame" x="239" y="7" width="140" height="62"/>
                         <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="45"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L: 18°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-u2-6Ec">
-                        <rect key="frame" x="266.66666666666669" y="65.666666666666671" width="36" height="23"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L: 18°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-u2-6Ec">
+                        <rect key="frame" x="277.33333333333331" y="65.666666666666671" width="48" height="23"/>
                         <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: 18°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m71-Xc-StZ">
-                        <rect key="frame" x="307.33333333333331" y="65.666666666666671" width="36" height="23"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H: 18°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m71-Xc-StZ">
+                        <rect key="frame" x="319.66666666666669" y="65.666666666666671" width="48" height="23"/>
                         <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -70,19 +70,19 @@
                     <constraint firstItem="m71-Xc-StZ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.209091" id="IdV-f0-JCG"/>
                     <constraint firstItem="MSo-PH-BYZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.385" id="J7t-K4-uUv"/>
                     <constraint firstItem="T02-lI-6h8" firstAttribute="centerY" secondItem="0st-IX-FNT" secondAttribute="centerY" id="Jlc-mb-ghR"/>
-                    <constraint firstItem="m71-Xc-StZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.09" id="N1a-in-1z7"/>
+                    <constraint firstItem="m71-Xc-StZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.12" id="N1a-in-1z7"/>
                     <constraint firstItem="T02-lI-6h8" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.163636" id="NBK-e7-Csz"/>
                     <constraint firstItem="ehF-u2-6Ec" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.209091" id="Qnr-O1-f6u"/>
                     <constraint firstItem="pRC-0y-DVB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.8" id="VDc-UD-J42"/>
-                    <constraint firstItem="m71-Xc-StZ" firstAttribute="trailing" secondItem="ejw-HD-vjy" secondAttribute="trailing" multiplier="0.93" id="XZQ-x5-G01"/>
+                    <constraint firstItem="m71-Xc-StZ" firstAttribute="trailing" secondItem="ejw-HD-vjy" secondAttribute="trailing" multiplier="0.97" id="XZQ-x5-G01"/>
                     <constraint firstItem="pRC-0y-DVB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.57" id="ZVy-y3-9Rw"/>
-                    <constraint firstItem="ehF-u2-6Ec" firstAttribute="leading" secondItem="ejw-HD-vjy" secondAttribute="leading" multiplier="1.07" id="aQA-cN-FGO"/>
-                    <constraint firstItem="ejw-HD-vjy" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="as1-cY-Khr"/>
+                    <constraint firstItem="ehF-u2-6Ec" firstAttribute="leading" secondItem="ejw-HD-vjy" secondAttribute="leading" multiplier="1.16" id="aQA-cN-FGO"/>
+                    <constraint firstItem="ejw-HD-vjy" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.35" id="as1-cY-Khr"/>
                     <constraint firstItem="ejw-HD-vjy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="76/110" id="eiN-Vp-okW"/>
                     <constraint firstItem="T02-lI-6h8" firstAttribute="leading" secondItem="0st-IX-FNT" secondAttribute="trailing" multiplier="130/110" id="feP-Td-ky7"/>
                     <constraint firstItem="ejw-HD-vjy" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.563636" id="nre-5D-QVM"/>
                     <constraint firstItem="T02-lI-6h8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="otn-Rg-CNx"/>
-                    <constraint firstItem="ehF-u2-6Ec" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.09" id="pkb-eO-Afe"/>
+                    <constraint firstItem="ehF-u2-6Ec" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.12" id="pkb-eO-Afe"/>
                     <constraint firstItem="MSo-PH-BYZ" firstAttribute="leading" secondItem="pRC-0y-DVB" secondAttribute="leading" multiplier="1.15" id="qtg-Q0-ftQ"/>
                     <constraint firstItem="ejw-HD-vjy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="170/110" id="sAt-iL-vBP"/>
                     <constraint firstItem="0st-IX-FNT" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.254545" id="sOH-GO-RKz"/>

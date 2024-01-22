@@ -100,12 +100,12 @@ extension BottomSheetViewController {
             let bottomColor = UIColor(hexString: "#283E51").cgColor
             gradientLayer.colors = [topColor, middleColor, bottomColor]
         } else {
-            let topColor = UIColor(hexString: "#5A9ACA").cgColor
+            let topColor = UIColor(hexString: "#FFFFFF").cgColor
             let middleColor = UIColor(hexString: "#6DD5FA").cgColor
-            let bottomColor = UIColor(hexString: "#FFFFFF").cgColor
+            let bottomColor = UIColor(hexString: "#5A9ACA").cgColor
             gradientLayer.colors = [topColor, middleColor, bottomColor]
         }
-        gradientLayer.locations = [0.0, 0.30, 1.0] // Adjust the positions of colors
+        gradientLayer.locations = [0.0, 0.35, 1.0] // Adjust the positions of colors
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
         

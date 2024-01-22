@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
         if let mainLabelData = weatherData {
             cityLabel.text = mainLabelData.cityName
-            tempLabel.text = mainLabelData.tempratureStr
+            tempLabel.text = mainLabelData.tempratureStr.replacingOccurrences(of: "°", with: "")
             descriptionLabel.text = mainLabelData.description.capitalized
             weatherIcon.image = UIImage(named: mainLabelData.icon)
         }
@@ -316,9 +316,9 @@ extension ViewController {
             let bottomColor = UIColor(hexString: "#283E51").cgColor
             gradientLayer.colors = [topColor, middleColor, bottomColor]
         } else {
-            let topColor = UIColor(hexString: "#5A9ACA").cgColor
-            let middleColor = UIColor(hexString: "#6DD5FA").cgColor
-            let bottomColor = UIColor(hexString: "#FFFFFF").cgColor
+            let topColor = UIColor(hexString: "#1c92d2").cgColor
+            let middleColor = UIColor(hexString: "#5A9ACA").cgColor
+            let bottomColor = UIColor(hexString: "#6DD5FA").cgColor
             gradientLayer.colors = [topColor, middleColor, bottomColor]
         }
         gradientLayer.locations = [0.0, 0.70, 1.0] // Adjust the positions of colors
